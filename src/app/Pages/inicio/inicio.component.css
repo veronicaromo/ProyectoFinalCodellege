@@ -1,0 +1,23 @@
+.inicio {
+    background-image: url("../../../assets/images/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 80vh;
+}
+
+.generos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
