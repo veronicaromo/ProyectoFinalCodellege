@@ -1,0 +1,19 @@
+.about-us {
+    background-image: url('../../../assets/images/bg-about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    font-family: 'Source Serif Pro';
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    background-color: rgba(254, 254, 254, 0.4);
+    border-radius: 80px;
+}
