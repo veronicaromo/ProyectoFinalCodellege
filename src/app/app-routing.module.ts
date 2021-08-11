@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { RegisterComponent } from './Forms/register/register.component';
 import { AboutComponent } from './Pages/about/about.component';
 import { BooksComponent } from './Pages/books/books.component';
 import { ContactComponent } from './Pages/contact/contact.component';
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'books', component: BooksComponent},
+  {path: 'register', component:RegisterComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'inicio'} 
 ];
 

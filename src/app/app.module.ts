@@ -9,6 +9,9 @@ import { FooterComponent } from './Shared/footer/footer.component';
 import { AboutComponent } from './Pages/about/about.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { BooksComponent } from './Pages/books/books.component';
+import { RegisterComponent } from './Forms/register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,15 @@ import { BooksComponent } from './Pages/books/books.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    BooksComponent
+    BooksComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

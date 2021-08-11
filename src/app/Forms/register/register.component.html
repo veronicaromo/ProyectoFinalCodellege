@@ -1,0 +1,115 @@
+<div class="fondo">
+    <br><br>
+    <div class="formulario container" style="width: 30%;">
+        <div class="container-fluid">
+            <br>
+            <h2>Register a book</h2>
+            <form (submit)="submit()" [formGroup]="registerForm">
+
+                <!-- TITLE -->
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" formControlName="title" require>
+
+                    <!--div>
+                        <div *ngIf="title.valid">&#x2714;</div>
+                        <div class="red" *ngIf="title.invalid && (title.dirty || title.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <!-- AUTHOR -->
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" class="form-control" formControlName="author" required>
+
+                    <!--div>
+                        <div *ngIf="author.valid">&#x2714;</div>
+                        <div class="red" *ngIf="author.invalid && (author.dirty || author.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <!-- GENRE -->
+                <div class="form-group">
+                    <label for="genre">Genre</label>
+                    <!--input type="text" class="form-control" formControlName="genre" required-->
+                    <select name="genre" formControlName="genre" class="form-control">
+                        <option value="Poetry">Poetry</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Young Fiction">Young Fiction</option>
+                      </select>
+
+                    <!--div>
+                        <div *ngIf="genre.valid">&#x2714;</div>
+                        <div class="red" *ngIf="genre.invalid && (genre.dirty || genre.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <!-- YEAR -->
+                <div class="form-group">
+                    <label for="year">Year of publication</label>
+                    <input type="number" class="form-control" formControlName="year" required>
+
+                    <!--div>
+                        <div *ngIf="year.valid">&#x2714;</div>
+                        <div class="red" *ngIf="year.invalid && (year.dirty || year.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <!-- PAGES -->
+                <div class="form-group">
+                    <label for="pages">Total of pages</label>
+                    <input type="number" class="form-control" formControlName="pages" required>
+
+                    <!--div>
+                        <div *ngIf="pages.valid">&#x2714;</div>
+                        <div class="red" *ngIf="pages.invalid && (pages.dirty || pages.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <!-- PAGES -->
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" formControlName="description"></textarea>
+
+                    <!--div>
+                        <div *ngIf="pages.valid">&#x2714;</div>
+                        <div class="red" *ngIf="pages.invalid && (pages.dirty || pages.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <!-- PRICE -->
+                <div class="form-group">
+                    <label for="price">Price</label>
+                    <input type="number" class="form-control" formControlName="price" required>
+
+                    <!--div>
+                        <div *ngIf="price.valid">&#x2714;</div>
+                        <div class="red" *ngIf="price.invalid && (price.dirty || price.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <!-- UNITS -->
+                <div class="form-group">
+                    <label for="units">Total of units</label>
+                    <input type="number" class="form-control" formControlName="units" required>
+
+                    <!--div>
+                        <div *ngIf="pages.valid">&#x2714;</div>
+                        <div class="red" *ngIf="pages.invalid && (pages.dirty || pages.touched)">&#x2718;</div>
+                    </div-->
+                </div>
+
+                <br>
+                <button type="submit" class="btn btn-light">Register book</button>
+                <button type="button" class="btn btn-dark" (click)="limpiar()">Clean form</button>
+            </form>
+            <br>
+        </div>
+    </div>
+    <br><br>
+</div>
