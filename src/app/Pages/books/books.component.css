@@ -1,0 +1,9 @@
+.agregar {
+    background-color: var(--primary);
+    color: white;
+}
+
+.agregar:hover {
+    background-color: var(--secondary);
+    color: black;
+}

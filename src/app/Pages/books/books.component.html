@@ -1,18 +1,38 @@
-<div>
-    <table *ngFor="let book of books">
-        <tr>
-            <td>{{book.title}}</td>
-            <td>{{book.author}}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><button (click)="delete(book._id)">x</button></td>
-        </tr>
-    </table>
+<div style="padding: 15px;">
+    <div>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Literary Genres</th>
+                    <th>Year</th>
+                    <th>Pages</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Units</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let book of books" class="table-stripped">
+                <tr>
+                    <td class="table-success">{{book.title}}</td>
+                    <td class="table-dark">{{book.author}}</td>
+                    <td>{{book.literaryGenres}}</td>
+                    <td class="table-success">{{book.year}}</td>
+                    <td class="table-dark">{{book.pages}}</td>
+                    <td>{{book.description}}</td>
+                    <td class="table-success">{{book.price}}</td>
+                    <td class="table-dark">{{book.units}}</td>
+                    <td><button class="btn btn-dark" (click)="delete(book._id)">x</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
 </div>
 
-<div>
-    <button>Add new book</button>
+<div style="margin-left: auto; margin-right: auto; text-align: center;">
+    <button class="btn agregar" [routerLink]="['/register']">Add new book</button>
 </div>
+<br>
