@@ -1,1 +1,18 @@
-<p>books works!</p>
+<div>
+    <table *ngFor="let book of books">
+        <tr>
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button (click)="delete(book._id)">x</button></td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <button>Add new book</button>
+</div>
